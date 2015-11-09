@@ -23,6 +23,9 @@
     }
     </style>
 
+    <link href="../vendor/sticky_footer/sticky_footer.css" rel="stylesheet">
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -50,10 +53,18 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="<?php echo $app->urlFor('table');?>">Home</a>
+                        <a href="<?php echo $app->urlFor('home');?>">Home</a>
                     </li>
                     <li>
-                        <a href="#">Create</a>
+                        <a href="<?php echo $app->urlFor('create');?>">Create Link</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $app->urlFor('add');?>">Add Tag</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="<?php echo $app->urlFor('about');?>">About</a>
                     </li>
                 </ul>
             </div>
